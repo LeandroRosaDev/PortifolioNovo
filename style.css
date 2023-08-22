@@ -1,0 +1,230 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Raleway:wght@500&family=Roboto:wght@400;500&display=swap');
+
+
+
+/* Reset Geral e configuração padrão */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+  color: var(--cor-v1);
+}
+img{
+  width: 200px;  
+}
+body{
+  margin: 0 10%;
+}
+
+/* Fontes  */
+.PlayFair700{
+  font-family: 'Playfair Display,sans-serif';
+  font-weight: 700;
+  color: #333333;
+}
+.nunito400{
+  font-family: Nunito;
+  font-weight: 400;
+  color: #828282;
+}
+
+/* Botões  */
+.btnAmarelo{
+    font-family: 'roboto';
+    font-size: .765rem;
+    font-weight: 400;
+
+    padding: 2% 4%;
+    background-color: #FDC435;
+    border-radius: .2rem;
+    text-align: center;
+}
+.btnTransparente{
+  font-family: 'roboto';
+  font-size: .765rem;
+  font-weight: 400;
+
+  padding: 2% 4%;
+  border: 1px solid #25282B;
+  border-radius: 1rem;
+  width: 30%;
+  text-align: center;
+}
+
+
+@media (max-width: 400px) {
+  .titulo{
+    font-family: 'Playfair Display,sans-serif';
+    font-weight: 700;
+    color: #333333;
+
+    font-size: 1.825rem;
+  }
+  .titulo:after{
+    content: " ";
+    width: 20%;
+    height: 10px;
+    background-color: #FDC435;
+    display: block;
+  }
+  .menu {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; 
+    margin: 5% auto;
+
+    font-family: 'Raleway', sans-serif;
+  }
+  .introducao{
+    margin-top: 5rem;
+  }
+  .introducaoContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .introducao img{
+    display: none;
+  }
+  .introducaoTexto h1{
+    font-family: 'nunito', serif;
+    font-weight: 700;
+    color: #FDC438;
+    font-size: .800rem;
+  }
+  .introducao h2{
+    font-size: 2rem;
+  }
+  .introducao p{
+    font-size: .825rem;
+  }
+  .introducaoLinks {
+    display: flex;
+    gap: 1rem;
+  }
+  .btnLinkedin{
+    padding: 2% 4%;
+    border:solid #25282B 1px;
+    border-radius: .2rem;
+    
+    font-size: .765rem;
+    font-weight: 400;
+    font-family: 'Roboto';
+  }
+
+  /* inicio da seção sobre */
+  .sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+  .sobre img{
+    margin: 0 auto;
+  }
+  .sobreContent{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+
+  /* inicio da seção qualificações */
+  .qualificacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+  .cardsPericias div{
+    display: grid;
+    
+    grid-template-rows: 1fr 60%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .cardsPericias div img{
+    grid-column: 2;
+    grid-row: 1;
+    width: 100px;
+  }
+  .cardsPericias div p{
+    grid-column: 1/3;
+  }
+  .subTitulo{
+    font-family: 'Playfair Display,sans-serif';
+    font-weight: 700;
+    color: #333333;
+    font-size: 1.225rem ;
+  }
+  .subTitulo:after{
+    content: " ";
+    width: 10%;
+    height: 10px;
+    background-color: #FDC435;
+    display: block;
+    margin-top: -10%;
+  }
+  /* inicio da seção projetos */
+  .projetos{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 5rem;
+  }
+  .projetos div{
+    display: grid;
+    grid-template-rows: 1fr repeat(4);
+    gap: 1rem;
+    align-items: start;
+  }
+  .projetos img{
+    width: 100%;
+    border: 1px solid #FDC435;
+  }
+  .subTituloProjetos{
+    font-family: 'Playfair Display,sans-serif';
+    font-weight: 700;
+    color: #333333;
+    font-size: 1.225rem ;
+  }
+  .subTituloProjetos:after{
+    content: " ";
+    width: 5%;
+    height: 10px;
+    background-color: #FDC435;
+    display: block;
+    margin-top: -5%;
+  }
+  /* inicio da seção contato */
+
+  .contato{
+    margin-top: 5rem;
+  }
+  .contato div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .nome{
+    font-size: .5rem;
+    text-align: center;
+  }
+  .contato img{
+    width: 20px;
+  }
+  .footer {
+    margin: 0 -12%;
+  }
+  .footer img{
+    width: 100%;
+  }
+}
