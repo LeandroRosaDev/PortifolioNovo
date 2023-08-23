@@ -8,29 +8,29 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="contentMenu">
+            <h1 class="nomeTopo" href="/">Leandro Rosa</h1>
             <ul class="menu">
-                <li><a href="/">Leandro Rosa</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#qualificacoes">Qualificações</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a id="menu" href="#sobre">Sobre</a></li>
+                <li><a id="menu" href="#qualificacoes">Qualificações</a></li>
+                <li><a id="menu" href="#projetos">Projetos</a></li>
+                <li><a id="menu" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main class="introducao">
         <div class="introducaoContent">
         <div class="introducaoTexto">
-            <h1>Front-End</h1>
-            <h2 class="PlayFair700">Olá, meu nome é Leandro Rosa</h2>
+            <h1>Front-End Developer</h1>
+            <h2 class=>Olá, meu nome é Leandro Rosa</h2>
             <p class="nunito400">Entusiasta da tecnologia, amante das máquinas, curioso por natureza e desbravador de novos horizontes. Olá, eu me chamo Leandro Rosa e aqui encontrarão algumas das minhas habilidades e fatos sobre a minha carreira como desenvolvedor!</p>
         </div>
         <div class="introducaoLinks">
             <a target="_blank" href="https://github.com/LeandroRosaDev" class="btnAmarelo">GitHub</a>
             <a target="_blank" href="https://www.linkedin.com/in/leandro-rosa-28ba8722a/" class="btnLinkedin">Linkedin</a>
         </div>
-        </div>
-        <img src="./pictures/ProfileYellow.png" alt="">
+    </div>
+    <img class="fotoIntroducao" src="./pictures/ProfileYellow.png" alt="">
     </main>
 
     <!-- Abaixo se inicia a seção em que eu falo sobre a minha carreira -->
@@ -44,7 +44,8 @@
                 Sempre buscando conhecimento na área, resolvi investir meu tempo e estudo para aprender desenvolvimento WEB e foi nessa área que eu me encontrei! Hoje trabalho no centro de processamento de dados da base militar de Mocanguê em niterói, Rio de janeiro, mas continuo estudando e me especializando diariamente com o intuito de conseguir um espaço no mercado de Desenvolvimento Web!
             </p>
         </div>
-        <img src="./pictures/AboutYellow.png" alt="imagem de perfil">
+        <img class="imgSobre" src="./pictures/AboutYellow.png" alt="imagem de perfil">
+        <img class="bgCirculo" src="./pictures/circle.png" alt="background em formato de circulo">
     </section>
 
     <!-- Abaixo se inicia a seção onde eu exponho 4 cards expondo qualidades e pericias conquistadas. -->
@@ -87,38 +88,58 @@
 
     <section class="projetos" id="projetos">
         <h1 class="titulo">Projetos</h1>
-        <div>
-            <h1 class="subTituloProjetos">Wilson Automóveis</h1>
+
+
+        <div class="start">
+            <div>
+            <h2 class="subTituloProjetos">Wilson Automóveis</h2>
             <p class="nunito400">
                 Este é um site de venda de automóveis. Esta aplicação foi desenvolvida completamente em React e serviu como objeto de estudo para alguns conceitos de hooks mutabilidade e integração com APIs externas.
             </p>
-            <a target="_blank" href="https://leandrorosadev.github.io/WilsonAutomoveis/"><img src="./pictures/projetos/projetoPKengenharia.png" alt="imagem do site Pk Engenharia"></a>
-          <a target="_blank" href="https://github.com/LeandroRosaDev/WilsonAutomoveis" class="btnTransparente">Veja o código</a>
+            <a target="_blank" class="imgSmall" href="https://leandrorosadev.github.io/WilsonAutomoveis/"><img src="./pictures/projetos/projetoWilsonAutomoveis.png" alt="imagem do site Pk Engenharia"></a>
+            <a class="btnTransparente" target="_blank" href="https://github.com/LeandroRosaDev/WilsonAutomoveis">Veja o código</a>
+            </div>
+            <a target="_blank" class="imgLargue" href="https://leandrorosadev.github.io/WilsonAutomoveis/"><img src="./pictures/projetos/projetoWilsonAutomoveis.png" alt="imagem do site Pk Engenharia"></a>
         </div>
-        <div>
-            <h1 class="subTituloProjetos">Dogs</h1>
+
+
+        <div class="end">
+            <a target="_blank" class="imgLargue" href="https://leandrorosadev.github.io/Dogs/"><img src="./pictures/projetos/projetoDogs.png" alt="imagem do site Dogs"></a>
+            <div>
+            <h2 class="subTituloProjetos">Dogs</h2>
             <p class="nunito400">
                 Este é meu maior projeto, concebido através do curso de react da Origamid. Trate-se de uma rede social dedicada aos nossos amigos caninos. Neste projeto temos todos os conceitos de hooks aplicados, integrações com APIs, comentários, Posts, cadastro de usuário, login de usuário.
             </p>
-            <a target="_blank" href="https://leandrorosadev.github.io/Dogs/"><img src="./pictures/projetos/projetoPKengenharia.png" alt="imagem do site Dogs"></a>
-            <a target="_blank" href="https://github.com/LeandroRosaDev/Dogs" class="btnTransparente">Veja o código</a>
+            <a target="_blank" class="imgSmall" href="https://leandrorosadev.github.io/Dogs/"><img src="./pictures/projetos/projetoDogs.png" alt="imagem do site Dogs"></a>
+            <a target="_blank" id="linkCodigo" class="btnTransparente" href="https://github.com/LeandroRosaDev/Dogs">Veja o código</a>
+            </div>
         </div>
-        <div>
-            <h1 class="subTituloProjetos">Bicraft</h1>
+        
+        <div class="start">
+            <div>
+            <h2 class="subTituloProjetos">Bicraft</h2>
             <p class="nunito400">
                 Este é um projeto de um site de venda de bicicletas. Projeto contém diversas funcionalidades como: Menu responsivo, formulários, animações css entre outros.
             </p>
-            <a target="_blank" href="https://leandrorosadev.github.io/bicraft.io/"><img src="./pictures/projetos/projetoPKengenharia.png" alt="imagem do site Bicraft"></a>
-            <a target="_blank" href="https://github.com/LeandroRosaDev/bicraft.io" class="btnTransparente">Veja o código</a>
-        </div>
-        <div>
-            <h1 class="subTituloProjetos">PK Engenharia</h1>
+            <a target="_blank" class="imgSmall" href="https://leandrorosadev.github.io/bicraft.io/"><img src="./pictures/projetos/projetoBicraft.png" alt="imagem do site Bicraft"></a>
+            <a target="_blank" id="linkCodigo" class="btnTransparente" href="https://github.com/LeandroRosaDev/bicraft.io">Veja o código</a>
+            </div>
+            <a target="_blank" class="imgLargue" href="https://leandrorosadev.github.io/bicraft.io/"><img src="./pictures/projetos/projetoBicraft.png" alt="imagem do site Dogs"></a>
+         </div>
+       
+        <div class="end">
+            <a target="_blank" class="imgLargue" href="https://leandrorosadev.github.io/pkengenharia.io/"><img src="./pictures/projetos/projetoPKengenharia.png" alt="imagem do site Dogs"></a>
+            <div>
+            <h2 class="subTituloProjetos">PK Engenharia</h2>
             <p class="nunito400">
                 Este é um projeto de um site de engenharia que oferece serviços elétricos, fotovoltaicos e de automóveis. O projeto contém menus responsivos, slides animados, links personalizados, mapas entre outras funcionalidades.
             </p>
-            <a target="_blank" href="https://leandrorosadev.github.io/pkengenharia.io/"><img src="./pictures/projetos/projetoPKengenharia.png" alt="imagem do site Dogs"></a>
-            <a target="_blank" href="https://github.com/LeandroRosaDev/pkengenharia.io" class="btnTransparente">Veja o código</a>
+            <a target="_blank" class="imgSmall" href="https://leandrorosadev.github.io/pkengenharia.io/"><img src="./pictures/projetos/projetoPKengenharia.png" alt="imagem do site Dogs"></a>
+            <a target="_blank" id="linkCodigo" class="btnTransparente" href="https://github.com/LeandroRosaDev/pkengenharia.io">Veja o código</a>
+             </div>
         </div>
+
+
     </section>
 
     <!-- Abaixo se inicia a seção aonde eu deixo as minhas redes sociais e meu contato -->
@@ -133,8 +154,8 @@
         <p class="nunito400 nome">Leandro rosa 2023</p>
     </section>
     <footer class="footer">
-        <img src="./pictures/footer.png" alt="imagem abstrata do footer">
+        
     </footer>
-    <script src="./script.js"></script>
+    
 </body>
 </html>
