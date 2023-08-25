@@ -1,9 +1,6 @@
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Raleway:wght@500&family=Roboto:wght@400;500&display=swap');
-
-
-
+ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Nunito:wght@400;700&family=Playfair+Display:wght@700&family=Raleway:wght@500&family=Roboto:wght@400;500&display=swap');
 /* Reset Geral e configuração padrão */
 * {
   margin: 0;
@@ -14,41 +11,13 @@
   list-style: none;
   color: var(--cor-v1);
 }
-
-/* Fontes  */
-
-
-
-/* Botões  */
-.btnAmarelo{
-    font-family: 'roboto';
-    font-size: .765rem;
-    font-weight: 400;
-
-    padding: 2% 4%;
-    background-color: #FDC435;
-    border-radius: .2rem;
-    text-align: center;
-}
-.btnTransparente{
-  font-family: 'roboto';
-  font-size: .765rem;
-  font-weight: 400;
-
-  padding: 2% 4%;
-  border: 1px solid #25282B;
-  border-radius: 1rem;
-  width: 30%;
-  text-align: center;
-}
-
-
 @media (min-width: 400px) {
   /* Configurações gerais iniciais */
   body{
     margin: 0 8%;
     background-color: #F9FAFF;
   }
+  /* Fontes genéricas */
   .titulo{
     font-family: 'Playfair Display,sans-serif';
     font-weight: 700;
@@ -67,6 +36,28 @@
     font-family: Nunito;
     font-weight: 400;
     color: #828282;
+  }
+  /* Botões  */
+  .btnAmarelo{
+  font-family: 'roboto';
+  font-size: .765rem;
+  font-weight: 400;
+
+  padding: 2% 4%;
+  background-color: #FDC435;
+  border-radius: .2rem;
+  text-align: center;
+  }
+  .btnTransparente{
+    font-family: 'roboto';
+    font-size: .765rem;
+    font-weight: 400;
+  
+    padding: 2% 4%;
+    border: 1px solid #25282B;
+    border-radius: 1rem;
+    width: 30%;
+    text-align: center;
   }
   
   /* inicio da seção menu */
@@ -152,7 +143,7 @@
     gap: 1rem;
   }
   .imgSobre{
-     margin: 0 auto;
+    margin: 0 auto;
     width: 8rem;
     position: relative;
     z-index: 3;
@@ -261,6 +252,7 @@
 }
 
 @media (min-width: 1024px) {
+
   /* Configurações gerais iniciais */
   body{
     margin: 0 5%;
@@ -268,6 +260,7 @@
  .nunito400{
   line-height: 1.7;
  }
+
   /* inicio da seção menu */
   .menu{
     gap: 3rem;
@@ -288,7 +281,6 @@
     position: relative;
     width: 70%;
     z-index: 2;
-    
   }
   .introducaoContent{
     max-width: 25rem;
@@ -321,7 +313,6 @@
     margin-left: 32.5%;
     animation: circulo 16s infinite linear;
     scale: 65%;
-
   }
 
   @keyframes circulo{
@@ -332,18 +323,19 @@
   .qualificacoes{
     margin-top: 10rem;
   }
-.cardsPericias{
+  .cardsPericias{
   display: grid;
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin-top: 4rem;
 }
-.cardsPericias>div{
+  .cardsPericias>div{
   padding: 1rem;
   background-color: #fff;
   border-radius: 0.6rem;
   max-width: 80%;
+  gap: 1rem;
 }
 
 
@@ -370,6 +362,9 @@
   background-color: #fff;
   border-radius: 0.6rem;
   max-width: 90%;
+ }
+ .start div,.end div{
+  gap: 2rem;
  }
 .contato{
   margin-top: 10rem;
@@ -404,4 +399,52 @@
   scale: 85%;
  }
 
+}
+@media(min-width:1920px){
+  .titulo{
+    font-size: 3rem;
+  }
+  .subTitulo, .subTituloProjetos{
+    font-size: 2rem;
+  }
+  .nunito400{
+    font-size: 1.25rem;
+  }
+  .btnAmarelo, .btnLinkedin, .btnTransparente{
+    font-size: 1rem;
+  }
+  /* inicio da seção menu */
+  .menu{
+    gap: 7rem;
+  }
+  .menu #menu, .nomeTopo{
+    font-size: 1.25rem;
+    }
+
+   /* inicio da seção introdução */
+   .fotoIntroducao{
+    margin-top: -8%;
+    width: 60%;
+  }
+  .introducao h1, .introducao p {
+    font-size: 1.5rem;
+  }
+  .introducao h2{
+    font-size: 4rem;
+  }   
+  .introducaoContent{
+    max-width: 40rem;
+  }
+
+  /* inicio da seção sobre */
+  .sobreContent{
+    max-width: 50rem;
+  }
+  .imgSobre{
+    width: 30%;
+  }
+  .bgCirculo{
+    margin-left: 48.5%;
+    scale: 90%;
+  }
 }
