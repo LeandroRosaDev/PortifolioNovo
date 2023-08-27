@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leandro Rosa</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -18,11 +19,20 @@
             </ul>
         </nav>
     </header>
+<div class="darkMode">
+    <input type="checkbox" class="checkbox" id="chk">
+    <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+    </label>
+</div>
+
     <main class="introducao">
         <div class="introducaoContent">
         <div class="introducaoTexto">
             <h1>Front-End Developer</h1>
-            <h2 class=>Olá, meu nome é Leandro Rosa</h2>
+            <h2 class='tituloIntroducao'>Olá, meu nome é Leandro Rosa</h2>
             <p class="nunito400">Entusiasta da tecnologia, amante das máquinas, curioso por natureza e desbravador de novos horizontes. Olá, eu me chamo Leandro Rosa e aqui encontrarão algumas das minhas habilidades e fatos sobre a minha carreira como desenvolvedor!</p>
         </div>
         <div class="introducaoLinks">
@@ -30,10 +40,10 @@
             <a target="_blank" href="https://www.linkedin.com/in/leandro-rosa-28ba8722a/" class="btnLinkedin">Linkedin</a>
         </div>
     </div>
-    <img class="fotoIntroducao" src="./pictures/ProfileYellow.png" alt="">
+    <img class="fotoIntroducao" src="./pictures/ProfileYellow.png" alt="imagem de perfil com fundo btnAmarelo">
     </main>
 
-    <!-- Abaixo se inicia a seção em que eu falo sobre a minha carreira -->
+    <!-- Abaixo se inicia a seção sobre -->
 
     <section class="sobre" id="sobre">
         <div class="sobreContent">
@@ -72,7 +82,7 @@
             <p class="nunito400">
                 Trabalho a 6 anos na área da tecnologia, no Centro de processamento de dados da Base Militar da Marinha em niterói, Rio de janeiro. Trabalho como operador de banco de dados e administrador de Redes.
             </p>
-            <img src="./pictures/icones/iconeExperiencia.png" alt="icone de uma experiencia">
+            <img src="./pictures/icones/iconeExperiencia.png" alt="icone de um formulario de curriculo">
         </div>
         <div class="qualidades">
             <h1 class="subTitulo">Atributos</h1>
@@ -87,6 +97,7 @@
     <!-- Abaixo se inicia a seção que eu exponho meus projetos mais recentes. -->
 
     <section class="projetos" id="projetos">
+        <div class="projetosContainer">
         <h1 class="titulo">Projetos</h1>
         <div class="start">
             <div>
@@ -99,7 +110,6 @@
             </div>
             <a target="_blank" class="imgLargue" href="https://leandrorosadev.github.io/WilsonAutomoveis/"><img src="./pictures/projetos/projetoWilsonAutomoveis.png" alt="imagem do site Pk Engenharia"></a>
         </div>
-
 
         <div class="end">
             <a target="_blank" class="imgLargue" href="https://leandrorosadev.github.io/Dogs/"><img src="./pictures/projetos/projetoDogs.png" alt="imagem do site Dogs"></a>
@@ -136,7 +146,7 @@
             <a target="_blank" id="linkCodigo" class="btnTransparente" href="https://github.com/LeandroRosaDev/pkengenharia.io">Veja o código</a>
              </div>
         </div>
-
+    </div>
 
     </section>
 
@@ -152,8 +162,18 @@
         <p class="nunito400 nome">Leandro rosa 2023</p>
     </section>
     <footer class="footer">
-        
+        <img src="./pictures/footer.png" alt="">
     </footer>
+        <!-- Aqui fica uma pequena seção onde eu insiro um botão que direciona para o Whatsapp -->
+
     
+        <button class="btn-whatsapp">
+            <a target="_blank" href="https://wa.me/5591985652848?text=Olá,%20tudo%20bem?%20Somos%20a%20PK%20Engenharia,%20sinta-se%20a%20vontade%20para%20entrar%20em%20contato%20conosco"><i class="fa fa-whatsapp"></i></a>
+          </button>
+       
+
+    <!-- Abaixo se inicia a seção em que eu falo sobre a minha carreira -->
+          <script src="./script.js"></script>
+          <script src="https://kit.fontawesome.com/998c60ef77.js"></script>
 </body>
 </html>
