@@ -13,63 +13,55 @@
   color: var(--cor-v1);
 }
 body{
-  background-color: #F9FAFF;
+  background-color: #e8e8e8;
   transition: background 0.2s linear;
-}
-body.dark{
+}body.dark{
   background-color: #25282B;
 }
-
-.checkbox{
-  opacity: 0;
-  position: absolute;
-  
-}
-.label{
-  background-color: #FDC435;
-  border-radius: 50px;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 5px;
-  position: relative;
-  height: 18px;
-  width: 38px;
-  transform: scale(1.5);
-  bottom: 1.5rem;
-  left: 20rem;
-  
-
-}
-.label .ball{
-  background-color: #f0f0f0;
-  border-radius: 50%;
-  position: absolute;
-  top: 4px;
-  left: 2px;
-
-  height: 20px;
-  width: 20px;
-
-  transform: translateX(0px);
-  transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .label .ball {
-  transform: translateX(24px)
-}
-.fa-moon, .fa-sun{
-  color: #a57600;
-}
-
-
-
-
 @media (min-width: 400px) {
   /* Configurações gerais iniciais */
+  /* Modo escuro  */
+  .checkbox{
+    opacity: 0;
+    position: absolute;
+  }
+  .label{
+    background-color: #FDC435;
+    border-radius: 50px;
+    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    padding: 5px;
+    position: relative;
+    height: 18px;
+    width: 38px;
+    transform: scale(1.5);
+    bottom: 1.5rem;
+    left: 20rem;  
+  }
+  .label .ball{
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 2px;
+  
+    height: 20px;
+    width: 20px;
+  
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px)
+  }
+  .fa-moon, .fa-sun{
+    color: #a57600;
+  }
   /* Fontes genéricas */
   .titulo{
     font-family: 'Playfair Display,sans-serif';
@@ -94,6 +86,10 @@ body.dark{
     font-size: 1rem;
   }
   /* Botões  */
+  .btnAmarelo:hover, .btnLinkedin:hover, .btnTransparente:hover {
+    scale: 105%;
+    transition: .4s;
+  }
   .btnAmarelo{
     font-family: 'roboto';
     font-size: .765rem;
@@ -121,8 +117,6 @@ body.dark{
     bottom: 30px;
     right: 30px;
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
     cursor: pointer;
     background: #FDC435;
     color: #f0f0fa;
@@ -149,7 +143,6 @@ body.dark{
     }
   }
 
-  
   /* inicio da seção menu */
   .contentMenu{
     display: flex;
@@ -255,18 +248,21 @@ body.dark{
     margin: 0 8%;
     margin-top: 5rem;
   }
-  .cardsPericias div{
+  .card{
     display: grid;   
     grid-template-rows: 1fr 60%;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    border-radius: .2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
   }
-  .cardsPericias div img{
+  .card img{
     grid-column: 2;
     grid-row: 1;
     width: 100px;
   }
-  .cardsPericias div p{
+  .card p{
     grid-column: 1/3;
   }
   .subTitulo{
@@ -294,6 +290,11 @@ body.dark{
   .projetosContainer{
     margin: 0 auto;
   }
+  .start, .end{
+    border-radius: 0.4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
   .start div,.end div{
     display: grid;
     gap: 2rem;
@@ -303,7 +304,6 @@ body.dark{
     width: 100%;
     border: 1px solid #FDC435;
     border-radius: 0.6rem;
-
   }
   .imgLargue{
     display: none;
@@ -341,8 +341,10 @@ body.dark{
     text-align: center;
     margin-bottom: 4rem;
   }
-  .contato img{
-    width: 20px;
+  .redesSociais{
+    width: 50px;
+    border-radius: 100rem;
+    background-color: #e8e8e8;
   }
   .footer {
     margin: 0 8%;
@@ -435,7 +437,7 @@ body.dark{
   grid-template-rows: 1fr 1fr;
   margin-top: 4rem;
   }
-  .cardsPericias>div{
+  .card{
   padding: 1rem;
   background-color: #fff;
   border-radius: 0.6rem;
@@ -443,12 +445,13 @@ body.dark{
   gap: 1rem;
   }
 
-
   /* inicio da seção projetos */
 
   .projetos{
-    margin-top: 10rem;
-    
+    margin-top: 10rem; 
+  }
+  .projetos img{
+    border: none;
   }
   .imgSmall{
   display: none;
@@ -477,7 +480,7 @@ body.dark{
   .footer img{
     max-width: 100%;
     scale: 112%;
-  }
+  }}
 @media (min-width: 1360px){
   .contentMenu, .introducao, .sobre, .qualificacoes, .projetos, .contato, .footer{
     margin-right:5%;
@@ -513,6 +516,19 @@ body.dark{
 
 }
 @media(min-width:1920px){
+  .btn-whatsapp{
+    font-size: 1.5rem;
+  }
+  @keyframes pulsar {
+    0% {
+      height: 40px;
+      width: 40px;
+    }
+    100% {
+      height: 55px;
+      width: 55px;
+    }
+  }
   .titulo{
     font-size: 3rem;
   }
@@ -527,7 +543,7 @@ body.dark{
   }
   /* inicio da seção menu */
   .menu{
-    gap: 5rem;
+    gap: 4rem;
   }
   .menu #menu, .nomeTopo{
     font-size: 1.25rem;
@@ -535,36 +551,52 @@ body.dark{
 
    /* inicio da seção introdução */
    .fotoIntroducao{
-    margin-top: -8%;
+    margin-top: -10%;
     width: 50%;
   }
   .introducao h1, .introducao p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   .tituloIntroducao{
     font-size: 4rem;
   }   
   .introducaoContent{
-    max-width: 40rem;
+    max-width: 50rem;
   }
 
   /* inicio da seção sobre */
   .sobreContent{
-    max-width: 50rem;
+    max-width: 60rem;
   }
   .imgSobre{
-    width: 30%;
+    width: 25%;
   }
   .bgCirculo{
-    margin-left: 48.5%;
-    scale: 90%;
+    margin-left: 52.5%;
+    scale: 80%;
   }
   .footer img{
     max-width: 100%;
-    scale: 150%;
+    scale: 151%;
   }
 }
-}
 .darkTitulo{
-  color: #F9FAFF;
+  color: #eeeded;
 }
+.darkBg{
+  background-color: #4a4949;
+}
+.darkBtn{
+  border: 1px solid #eeeded;
+  color: #eeeded;
+}
+.darkBtn:hover{
+  border: none;
+  background-color: #eeeded;
+  color: #25282B;
+  transition: .4s;
+}
+
+
+
+
