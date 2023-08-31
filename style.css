@@ -18,7 +18,7 @@ body{
 }body.dark{
   background-color: #25282B;
 }
-@media (min-width: 400px) {
+@media (min-width:389px) {
   /* Configurações gerais iniciais */
   /* Modo escuro  */
   .checkbox{
@@ -403,10 +403,18 @@ body{
     justify-content: center;
    align-items: center;
   }
-  .redesSociais, .EUA, .brasil{
+  .redesSociais{
     width: 50px;
     border-radius: 100rem;
     background-color: #e8e8e8;
+    cursor: pointer;
+  }
+  .EUA, .brasil {
+    width: 70px;
+    border-radius: 100rem;
+    background-color: #e8e8e8;
+    cursor: pointer;
+    padding: 16px;
   }
 
   .footer {
@@ -656,7 +664,7 @@ body{
   /* Inicio da seção footer */
   .footer img{
     max-width: 100%;
-    scale: 151%;
+    
   }
 }
 .darkTitulo{
@@ -684,6 +692,10 @@ body{
 .translateInativo{
   display: block;
 }
+.translateInativoSobre{
+  display: flex;
+}
+
 
 
 

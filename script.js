@@ -45,13 +45,16 @@ navToSection.forEach( function(link){
 
 var EUA = document.querySelector('.EUA')
 
-console.log(EUA)
-
 EUA.addEventListener('click', ()=>{
     document.querySelectorAll('.introducao, .sobre, .qualificacoes, .projetos, .contato, .contentMenu').forEach(element =>{
         element.classList.toggle('translateAtivo')
     })
     document.querySelectorAll('.introducaoEn, .sobreEn, .qualificacoesEn, .projetosEn, .contatoEn, .contentMenuEn').forEach(element =>{
         element.classList.toggle('translateInativo')
+    })
+})
+EUA.addEventListener('click', ()=>{
+    document.querySelectorAll('.sobreEn, .contentMenuEn, .introducaoEn').forEach(element =>{
+        element.classList.toggle('translateInativoSobre')
     })
 })
